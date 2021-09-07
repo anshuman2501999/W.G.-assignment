@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class ='jumbotron text center'>
+    <H1> Welocme to E-Products</H1>
+    <p class='lead'> E-Products allow you to sell products such as MP3's, e-Books, PDF, and just about any type of digital file. Unlike conventional products, links to the e-products are generally emailed to the client upon purchase and can be downloaded by them.</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+{% endblock %}
